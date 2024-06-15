@@ -1,0 +1,15 @@
+:root{
+    --color-primary:#013f58;
+    --color-second:#c8ded9;
+    --colot-third:#b1c4c0;
+    --color-fourth:#9aaba8;
+    --color-fifth:#edb17d;
+}
+
+#header{
+    background-color:var(--color-fifth) !important;
+}
+
+body {
+    background-color: var(--color-fifth) !important;
+}
