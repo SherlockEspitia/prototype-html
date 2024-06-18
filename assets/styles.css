@@ -1,0 +1,37 @@
+:root{
+    --color-primary:#013f58;
+    --color-second:#c8ded9;
+    --colot-third:#b1c4c0;
+    --color-fourth:#9aaba8;
+    --color-fifth:#edb17d;
+}
+body{
+    background-color: var(--color-fifth);
+}
+
+.content {
+    width: 98vw;
+    height: 96vh;
+    background-color: white;
+    margin: 2vh 1vw;
+    border: 0.7rem solid var(--color-fourth);
+    border-radius: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+
+header{
+    height: 16vh;
+    width: 94vw;
+    border-radius: 10px;
+    & .logo > img{
+        width: 128px;
+        height: 128px;
+    }
+    
+}
+a.btn-register a.btn{
+    text-decoration: none;
+    background-color: var(--color-primary);
+    color: #ffffff;
+}
