@@ -30,8 +30,106 @@ header{
     }
     
 }
-a.btn-register a.btn{
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-size: larger;
+    
+    & a{
+        text-decoration: none;
+        color: black;
+        margin: 0 1em; 
+        font-style: italic;
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+.boton{
+    border-start-start-radius: 25px 25px;
+    border-start-end-radius: 25px 25px;
+    border-end-start-radius: 25px 25px;
+    border-end-end-radius: 25px 25px;
+}
+.register {
     text-decoration: none;
+    font-size: 24px;
     background-color: var(--color-primary);
     color: #ffffff;
+    padding: 10px 25px;
+}
+
+.register:hover{
+    text-decoration: none;
+    color: var(--color-second);
+}
+
+.general{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5vh;
+    overflow: visible;
+}
+
+
+.circle-content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    background-color: var(--color-content);
+    width: 500px;
+    height: 500px;
+    border-radius: 100%;
+    border: 1px solid black;
+    & .title-content{
+        border: 1px solid black;
+        border-start-start-radius: 25px 25px;
+        border-start-end-radius: 25px 25px;
+        border-end-start-radius: 25px 25px;
+        border-end-end-radius: 25px 25px;
+        text-align: center;
+        background-color: #C8DED9;
+        font-size: 64px;
+        margin-top:17px;
+        font-style: italic;
+        font-weight: 400;
+        width: 520px;
+        color: black;
+    }
+    & p{
+        text-align: center;
+        margin: 1em auto 0.5em;
+        font-size: 24px;
+        width: 311px;
+    }
+    & a.visit{
+        text-align: center;
+        margin: 1em 5rem 0.5em 11rem;
+        background-color: var(--color-fifth);
+        color: black;
+        padding: 10px 5px;
+        border: 5px solid #C8DED9;
+        width: 15vh;
+    }
+
+    & .icon-tienda{
+        width: 220px;
+        height: auto;
+        margin-left: 15vh;
+        margin-top: 1vw;
+    }
+}
+
+.margin-top{
+    margin-top: 15vh;
+}
+
+.icon-servicio{
+    width: 159px;
+    height: auto;
+    margin-left: 17vh;
+}
+
+.servicios{
+    background-color: #C8DED9;
+    border: 1px solid black;
 }
