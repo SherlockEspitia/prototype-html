@@ -1,4 +1,5 @@
 document.getElementById('propietarioForm').addEventListener('submit', function(event) {
+    event.preventDefault()
     let valid = true;
 
     // Validar nombres
@@ -6,6 +7,9 @@ document.getElementById('propietarioForm').addEventListener('submit', function(e
     const nombresError = document.getElementById('nombresError');
     if (nombres.value.trim() === '') {
         nombresError.textContent = 'Este campo es obligatorio.';
+        if( !/^[a-zA-z]/.test(nombres)){
+            nombresError.innerText="Ingrese solo letras"
+        }
         valid = false;
     } else {
         nombresError.textContent = '';

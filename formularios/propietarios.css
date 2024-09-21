@@ -1,7 +1,7 @@
 @import url(../assets/styles.css);
 body{
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,6 +17,11 @@ main.content{
     max-height: 90vh;
     max-width: 80vw;
     margin-top: 5vh;
+    & input{
+        margin-top: 10px;
+        padding: 0.5em;
+        border-radius: 10px;
+    }
 }
 
 .error { color: red; }
