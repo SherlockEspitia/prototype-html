@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Propietario</title>
+    <link rel="stylesheet" href="./propietarios.css">
+    
+</head>
+<body>
+    <main class="content">
+        <form id="propietarioForm">
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" maxlength="45" required>
+            <span class="error" id="nombresError"></span><br><br>
+    
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" maxlength="45" required>
+            <span class="error" id="apellidosError"></span><br><br>
+    
+            <label for="correo_electronico_propietario">Correo Electrónico:</label>
+            <input type="email" id="correo_electronico_propietario" name="correo_electronico_propietario" maxlength="75" required>
+            <span class="error" id="correoError"></span><br><br>
+    
+            <label for="telefono_propietario">Teléfono:</label>
+            <input type="tel" id="telefono_propietario" name="telefono_propietario" maxlength="45" required>
+            <span class="error" id="telefonoError"></span><br><br>
+    
+            <label for="direccion_propietario">Dirección:</label>
+            <input type="text" id="direccion_propietario" name="direccion_propietario" maxlength="45" required>
+            <span class="error" id="direccionError"></span><br><br>
+    
+            <label for="ciudad_propietario">Ciudad:</label>
+            <input type="text" id="ciudad_propietario" name="ciudad_propietario" maxlength="45" required>
+            <span class="error" id="ciudadError"></span><br><br>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <script src="./validaciones.js">
+    </script>
+</body>
+</html>

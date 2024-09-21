@@ -1,0 +1,22 @@
+@import url(../assets/styles.css);
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    max-height: 90vh;
+    max-width: 80vw;
+    margin-top: 5vh;
+}
+
+.error { color: red; }
